@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="#FDFCE7FF"
+    android:layout_margin="2dp"
+    android:padding="8dp"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:text="نص الاقتباس"
+            android:layout_toStartOf="@+id/delete_icon"
+
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/secondary_text_light"
+            />
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
